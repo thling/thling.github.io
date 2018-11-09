@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<title>Sam Ling | Resume</title>
+<head>
+    <style>
+        * {
+            /* Reset */
+            margin: 0px;
+            padding: 0px;
+            border:none;
+            /* Default */
+            font: 12pt/1.1 Calibri;
+            color: rgb(0, 0, 0);
+        }
+
+        /* General styling */
+        li {
+            margin-top: 2px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        hr {
+            height: 1px;
+            margin: 15px auto;
+            background-color: rgb(170, 170, 170);
+        }
+
+        body {
+            margin: auto;
+            max-width: 21.59cm;
+            min-width: 21.59cm;
+        }
+
+        section {
+            margin-left: 10px;
+        }
+
+        div.section_contents {
+            margin: 5px 0px 5px 15px;
+        }
+
+        h1 {
+            color: rgb(100, 100, 100);
+            font-size: 24px;
+            font-variant: small-caps;
+            font-family: Georgia;
+        }
+
+        h2 {
+            font-size: 18px;
+            display: inline;
+        }
+
+        .h2_desc {
+            font-size: 16px;
+        }
+
+        h3 {
+            color: rgb(120,120,120);
+            font-style: italic;
+            margin: 2px 5px;
+        }
+
+        /* Section contents */
+        section .details {
+            margin-left: 30px;
+            width: 14cm;
+        }
+
+        section div.section_item {
+            margin-bottom: 15px;
+        }
+
+        /* Section Master Title */
+        section.master_title {
+            margin-top: 10px;
+        }
+
+        section.master_title td.info {
+            text-align: left;
+        }
+
+        section.master_title td.contact, a {
+            text-align: right;
+            font-size: 14px;
+            padding-right: 2px;
+        }
+
+        /* Section Work Experience */
+        section.work_experience .details {
+            width: 80%;
+        }
+
+        section.work_experience td.left{
+            padding-right: 20px;
+            width: 55%;
+        }
+        section.work_experience td.right{
+            padding-left: 20px;
+            width: 45%;
+        }
+
+        /* Print formatting */
+        @media print {
+            .printHide {
+                display: none;
+            }
+
+            .printBreak{
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="master_title">
+        <table style="width: 100%;">
+            <tr>
+                <td class="info">
+                    <div style="font-size:28px; margin-bottom:5px; font-family: Georgia;">Sam Ling</div>
+                    Software Development Engineer, AmazonUI<br/>
+                    Amazon.com
+                </td>
+                <td class="contact" valign="bottom">
+                    Seattle, Washington, USA<br/>
+                    <a href="mailto:sam@thling.com" target="_blank">sam@thling.com</a> | 
+                    <a href="http://thling.com" target="_blank">http://thling.com</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <hr />
+
+    <section class="skills">
+        <h1>Highlights</h1>
+        <div class="section_contents">
+            <div class="section_item">
+                <ul>
+                    <li class="details">
+                        Experienced with HTML, JavaScript (ES6/Node.js), React, TypeScript, CSS</li>
+                    <li class="details">
+                        Proficient with Java, Kotlin, C/C++, SQL/NoSQL, Bash</li>
+                    <li class="details">
+                        Consultant in infrastructure designs and lead engineer for full-stack teams</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="work_experience">
+        <h1>Work Experience</h1>
+        <div class="section_contents">
+            <div class="section_item" id="work_present">
+                <h2>Software Development Engineer | </h2><span class="h2_desc">Amazon.com</span><br/>
+                <h3>Seattle, Washington, United States of America<br/>
+                    February 2016 - Present</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li class="details">
+                                    Organisational impact working on UX library used by 97% of Amazon's e-commerce teams</li>
+                                <li class="details">
+                                    Designed and implemented the team's unique release process</li>
+                                <li class="details">
+                                    Contributed to the team's own build and deploy infrastructure</li>
+                                <li class="details">
+                                    Designed and implemented company-internal tools framework</li>
+                                <li class="details">
+                                    Designed and implemented UX A/B testing experiment with low latency impact,
+                                    leading to an estimated annualised win of USD $440 million worldwide</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section_item" id="work_purdue">
+                <h2>Graduate Student Assistant | </h2><span class="h2_desc">Purdue University</span><br/>
+                <h3>West Lafayette, Indiana, United States of America<br/>
+                    January 2014 - Present</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li class="details">
+                                    Maintained and contributed to HUBzero platform and Purdue University Research Repository</li>
+                                <li class="details">
+                                    Designed and implemented OAI-ORE compliant linked data generator for machine-readable metadata</li>
+                                <li class="details">
+                                    Administered virtual servers for the Purdue University Research Repository Lab</li>
+                                <li class="details">
+                                    Developed versatile scripts for automatic video rendering for data curation
+                                    (<a href="https://purr.purdue.edu/content/article?id=66" target="_blank">https://purr.purdue.edu/content/article?id=66</a>)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section_item" id="work_sap">
+                <h2>Application Developer Co-op | </h2><span class="h2_desc">SAP (formerly Sybase)</span><br/>
+                <h3>Waterloo, Ontario, Canada<br/>
+                    August 2012 - December 2012</h3>
+                <table>
+                    <tr>
+                        <td valign="top" class="left">
+                            <ul>
+                                <li class="details">
+                                    Designed and implemented server automatic update workflow</li>
+                                <li class="details">
+                                    Designed and implemented automatic software deployment
+                                    using various scripting languages</li>
+                                <li class="details">
+                                    Assisted with code migration during SAP merger</li>
+                                <li class="details">
+                                    Fast integration of giant code base for client demo
+                                    on multi-million U.S. Dollars contracts</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section_item" id="work_blackberry">
+                <h2>Software Tools Developer Co-op | </h2><span class="h2_desc">Blackberry (formerly RIM)</span><br/>
+                <h3>Waterloo, Ontario, Canada<br/>
+                    September 2011 - April 2012</h3>
+                <table>
+                    <tr>
+                        <td valign="top" class="left">
+                            <ul>
+                                <li class="details">
+                                    Maintained Zend Framework based internal systems</li>
+                                <li class="details">
+                                    Maintained and optimized efficiency for databases</li>
+                                <li class="details">
+                                    Designed and implemented core modules for critical needs</li>
+                                <li class="details">
+                                    Created a suite of development assistive server scripts</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section_item" id="work_ppo">
+                <h2>Spectroscopy Software Developer Co-op | </h2><span class="h2_desc">P&amp;P Optica</span><br/>
+                <h3>Kitchener, Ontario, Canada<br/>
+                    May 2010 - August 2010; January 2011 - April 2011</h3>
+                <table>
+                    <tr>
+                        <td valign="top" class="left">
+                            <ul>
+                                <li class="details">
+                                    Designed database schemas and developed database management tools</li>
+                                <li class="details">
+                                    Implemented instant search for database objects</li>
+                                <li class="details">
+                                    Implemented graphing library for visualizing spectral data</li>
+                                <li class="details">
+                                    Designed user interfaces and interaction for several software</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <hr class="printHide"/>
+    <div class="printBreak"></div>
+
+    <section class="projects">
+        <h1>Projects</h1>
+        <div class="section_contents">
+            <div class="section_item">
+                <h2>MentorInTech | </h2><a href="https://mentorintech.com" target="_blank">https://mentorintech.com</a><br/>
+                <h3>April 2018 - Present</h3>
+                <ul>
+                    <li class="details">
+                        Led the front-end team in developing large-scale React web application</li>
+                    <li class="details">
+                        Designed and implemented complex and reusable components</li>
+                    <li class="details">
+                        Assisted back-end team in infrastructure and database systems designs</li>
+                </ul>
+            </div>
+            <div class="section_item">
+                <h2>User Input Genuity Experiment | </h2><a href="http://thling.com/files/fault_tolerance_system_final_report.pdf" target="_blank">http://bit.ly/2DSmkIL</a><br/>
+                <h3>November 2015 - December 2015</h3>
+                <ul>
+                    <li class="details">
+                        Designed and implemented the back-end system using Node.js and MongoDB</li>
+                    <li class="details">
+                        Developed a project webapp soley within 1 month (<a href="http://bit.ly/2nwwinY" target="_blank">http://bit.ly/2nwwinY</a>)</li>
+                </ul>
+            </div>
+            <div class="section_item">
+                <h2>Applyte</h2>
+                <h3>June 2015 - June 2016</h3>
+                <ul>
+                    <li class="details">
+                        Designed and implemented the back-end system using Node.js and RethinkDB</li>
+                    <li class="details">
+                        Designed and implemented security flow for an API-centric web application</li>
+                    <li class="details">
+                        Contributed to front-end designs and prototypes</li>
+                    <li class="details">
+                        Coordinated developers to assist in development</li>
+                </ul>
+            </div>
+            <div class="section_item">
+                <h2>Human-Computer Interaction - Work Redesign Project | </h2><a href="http://thling.com/projects/?section=records_management,count=3" target="_blank">http://bit.ly/2nqNOL8</a><br/>
+                <h3>May 2012 - July 2012</h3>
+                <ul>
+                    <li class="details">
+                        Practised contextual design and analysis</li>
+                    <li class="details">
+                        Redesigned interface and interactions for
+                        existing records management system</li>
+                    <li class="details">
+                        Redesigned subjects' work flow and improved
+                        work efficiencies with modern technology</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class="education">
+        <h1>Education</h1>
+        <div class="section_contents">
+            <div class="section_item">
+                <h2>Master of Science in Computer Science | </h2>Purdue University<br/>
+                <h3>West Lafayette, Indiana, United States of America<br/>
+                    January 2014 - Deccember 2015</h3>
+            </div>
+            <div class="section_item">
+                <h2>Bachelor of Honours Computer Science Co-op | </h2>University of Waterloo<br/>
+                <h3>Waterloo, Ontario, Canada<br/>
+                    September 2008 - June 2013</h3>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <section class="activities">
+        <h1>Activities and Interests</h1>
+        <div class="section_contents">
+            <div class="section_item">
+                <h2>Technology Related</h2><br/>
+                <ul>
+                    <li class="details">
+                        Develop small programs that make life easier</li>
+                    <li class="details">
+                        Get astonished by mobile systems and cloud technologies</li>
+                    <li class="details">
+                        Experiment different kinds of design styles on software and web pages</li>
+                </ul>
+            </div>
+            <div class="section_item">
+                <h2>Others</h2><br/>
+                <ul>
+                    <li class="details">
+                        Improvise and compose piano pieces</li>
+                    <li class="details">
+                        Study foreign languages and classical music</li>
+                    <li class="details">
+                        Travel around the world and admire the architectures</li>
+                    <li class="details">
+                        Stock market speculation (extremely amateur)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

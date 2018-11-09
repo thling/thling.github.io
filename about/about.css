@@ -1,0 +1,29 @@
+th {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+    color: black;
+}
+
+td {
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 20px;
+    color: #000;
+}
+
+table.intro {
+    border-collapse: separate;
+    font-size:16px;
+    margin: 10px;
+}
+
+tr.spaceAbove > * {
+  padding-top: 25px;
+}
+
+.extraInfo {
+    float: right;
+    padding: 0px 10px 0px 10px;
+    margin: 20px;
+}

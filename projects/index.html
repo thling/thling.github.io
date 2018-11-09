@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<title>Sam's Projects</title>
+<head>
+    <meta http-equiv="content-type" content="text-html; charset=utf-8">
+    <link type='text/css' rel='stylesheet' href='../styles/fonts.css' />
+    <link type='text/css' rel='stylesheet' href='../styles/page-loader.css' />
+    <link type='text/css' rel='stylesheet' href='../styles/main.css' />
+    <link type='text/css' rel='stylesheet' href='../plugins/switcher-layout/switcher.css' />
+    <link type='text/css' rel='stylesheet' href='projects.css' />
+    <script type='text/javascript' src='../scripts/jquery-1.8.3.min.js'></script>
+    <script type='text/javascript' src='../scripts/util.js'></script>
+    <script type='text/javascript' src='../scripts/page-loader.js'></script>
+    <script type='text/javascript' src='../scripts/page-entry.js'></script>
+    <script type='text/javascript' src='../plugins/switcher-layout/switcher.js'></script>
+    <script type='text/javascript' src='projects.js'></script>
+    <script>
+        $(document).ready(function() {
+            pageEntry('../images/projects_text.png', 'projects');
+        });
+    </script>
+</head>
+<body>
+    <div class="pageLoader">
+        - LOADING -
+    </div>
+    <div id="cover">
+        <img id="pageHeader"></img>
+        <div id="menuList">
+            <span><a id="menuHome" class="menuItem" href="../home">home</a></span>
+            <span><a id="menuAbout" class="menuItem" href="../about">about</a></span>
+
+            <hr align="right" />
+
+            <span><a id="menuProjects" class="menuItem">projects</a></span>
+            <span><a id="menuJournals" class="menuItem" href="../journals">journals</a></span>
+        </div>
+        <div id="contents_cover">
+            <div id="contents">
+                <div id="navBack" class="navigator" onclick="loadBack()">Back</div>
+                <div id="navMore" class="navigator" onclick="loadMore()">More</div>
+
+                <div id="section1" class="sections">
+                    <div class="sectionTitle">Switcher Layout</div>
+                    <div class="sectionSubtitle">
+                        JavaScript &plus; CSS &plus; HTML | December 2012
+                    </div>
+
+                    <div class="sectionContent">
+                        <div class="extraInfo">
+                            <div class="sectionSubtitle">Highlights</div>
+
+                            <hr style="width: 100%"/>
+
+                            <p><b>Switch Without Extra Page Load</b><br/>
+                            The plugin allows in-page view switching without any extra page
+                            load. This will result in a more fluid website viewing experience.
+                            </p>
+
+                            <p><b>Extendability</b><br/>
+                            The code will be completely open, and the styles and core functions
+                            will be factored in a way that is easy to integrate. The built-in
+                            loaders (<code>loadMore()</code> and <code>loadBack()</code>) can be
+                            easily associated with any front end components.
+                            </p>
+                        </div>
+                        <p>Switcher Layout is an easy way to implement in-page contents
+                        switching; it is being used every where in this website. It provides
+                        fast way to switch sections without reloading the page. In my website,
+                        you can experience it by pressing left or right arrow key or click on
+                        the More and Back button on the top of the pages.</p>
+                        <p>Switcher Layout is created as a by-product of the redesign of my
+                        personal website. At first, I was experimenting with different ways
+                        to display my contents; in order to make browsing faster, I decided
+                        to remove as many page loads as possible. This, however, results in
+                        clogging the entire page with information, and I needed a way to
+                        separate these contents into different views.</p>
+                        <p>The result is this layout. It consumes everything as "section,"
+                        allows user to define a default section, and pushes everything aside
+                        and hide them. By using one of the <code>loadMore</code> and
+                        <code>loadBack</code> functions, it goes through a series of integrity
+                        checks and then applies jQuery <code>animate</code> function to dismiss
+                        the current section and summon the next section.</p>
+                        <p>This solves the long-page problem by categorizing similar information
+                        into their own sections, yet it creates another issue: there is no
+                        way in this layout to skip to a certain section without manually clicking
+                        on More and Back buttons. I was stunned for a few minutes, yet I suddenly
+                        recalled how request parameters are passed using Ajax. Why don't I simply
+                        specify section names in the URL, parse it, and recusively call <code>loadMore</code>
+                        function?</p>
+                        <p>I attempted the idea, and it was successful since the first implementation
+                        (because, to be honest, it was super easy). Currently, user simply specify
+                        the key to the section in the URL by adding <code>?section=[section_name]</code> and
+                        the layout will apply loadMore function until the section is displayed.</p>
+                    </div>
+                </div>
+
+                <div id="section2" class="sections">
+                    <div class="sectionTitle">File Renamer</div>
+
+                    <div class="sectionSubtitle">
+                        Java &plus; NetBeans | August 2012 - Ongoing
+                    </div>
+
+                    <div class="linksMenu">
+                        <a class="link" href="https://github.com/thling/FileRenamer"
+                           target="_blank">GitHub</a> |
+                        <a class="link" href="../files/FileRenamer.jar"
+                           target="_blank">Java Archive (JRE 7+)</a>
+                    </div>
+
+                    <div class="sectionContent">
+                        <div class="extraInfo">
+                            <div class="sectionSubtitle">Software Highlights</div>
+                            <hr style="width:100%"/>
+                            <p><b>Automatic File Name Matching</b><br/>
+	                        If the name of the files in the directory consists of some
+	                        numeric patterns, the tool will detect the pattern and rewrite
+	                        the strings accordingly.</p>
+
+		                    <p><b>Prefix</b><br/>
+	                        Allows the user to rename files with a prefix. For example,
+	                        <code>img_20121221_066</code> to represent the 66th (<code>066</code>) image file
+	                        (<code>img</code>) taken on December 21, 2012 (<code>20121221</code>).</p>
+
+		                    <p><b>Digit Filling</b><br/>
+	                        Fills the file name to a specified length of digits. For example,
+                            <code>1.png</code> &rarr; <code>001.png</code>, <code>32.png</code>
+                            &rarr; <code>032.png</code> when digit fill is set to 3.</p>
+                        </div>
+                        <p>To talk about this project, I would like to first introduce
+                        to you my dear digital point-and-shoot camera. This camera is
+                        actually really nice; it shoots static images well and performs
+                        excellently at low light situations. Its video recording is also
+                        top-tier (of most of the digital cameras I have used), although the
+                        sound quality is subpar. I am pretty satisfied with this camera,
+                        until I learned that there is no proper way to automatically
+                        format the image names except for brute forcing (renaming files
+                        one by one).</p>
+
+			            <p>This is a problem to me. I am (at least I think) a very organized
+			            person, physically and virtually. That is, I always keep my files
+			            organized with some sort of naming convention then group similar
+			            items into one directory. Of course, to rename each file is not a
+			            big issue, yet it becomes cumbersome if I happen to go on a trip.
+			            Imagine renameing few hundreds (or maybe over a thousand) photos!
+			            This is insane!</p>
+
+			            <p>So, I decided to take a few minutes and compose a shell script
+			            that renames each photo into the name I want. This tool has eventually
+			            been rewritten into a Java program with graphical user interface and
+			            several functionalities. To name a few features:</p>
+                    </div>
+                </div>
+
+                <div id="section3" class="sections">
+                    <div class="sectionTitle">Records Management System</div>
+
+                    <div class="sectionSubtitle">
+                        Java &plus; NetBeans &plus; Contextual Design | May 2012 - July 2012
+                    </div>
+
+                    <div class="linksMenu">
+                        <a class="link" href="https://github.com/thling/RecordsManagementSystem"
+                           target="_blank">GitHub</a> |
+                        <a class="link" href="../files/hci/RecordsManagementSystem.jar"
+                           target="_blank">JAR (JRE 7+)</a> |
+                        <a class="link" href="../files/hci/HCI_Phase_1_Report.pdf"
+                           target="_blank">Phase 1 Report</a> |
+                        <a class="link" href="../files/hci/HCI_Phase_2_Report.pdf"
+                           target="_blank">Phase 2 Report</a> |
+                        <a class="link" href="../files/hci/HCI_Final_Report.pdf"
+                           target="_blank">Final Write-up</a> |
+                        <a class="link" href="http://youtu.be/7ptfE4bPRxY"
+                           target="_blank">Video Summary</a>
+                    </div>
+
+                    <div class="sectionContent">
+                        <div class="extraInfo" style="width: 250px;">
+                            <p class="sectionSubtitle">Collaborators</p>
+                            <hr style="width: 100%"/>
+                            <p><b>Ling, Sam</b><br/>
+                                <a class="collaborator" target="_blank" href="mailto:sam@thling.com">
+                                    sam@thling.com</a>
+                            </p>
+                            <p><b>Vallis, Michael</b><br/>
+                                <a class="collaborator" target="_blank" href="mailto:vallism2000@yahoo.com">
+                                    vallism2000@yahoo.com</a>
+                            </p>
+                            <p><b>Wang, Boquan (Frank)</b><br/>
+                                <a class="collaborator" target="_blank" href="mailto:wangboquan@gmail.com">
+                                    wangboquan@gmail.com</a>
+                            </p>
+                            <p><b>Zhao, Mengqi (Marina)</b><br/>
+                                <a class="collaborator" target="_blank" href="mailto:m7zhao@gmail.com">
+                                    m7zhao@gmail.com</a>
+                            </p>
+                        </div>
+
+                        <p>This project was a requirement of CS 449: Human-Computer Interaction course.
+                        Students form in to HCI teams of 3 or 4 and, using Contexual Design, redesign
+                        a group of real world professionals' workflows. Our group chose to work on this
+                        project with individual financial advisors.</p>
+
+                        <p>We set up interviews with our subjects and guide them into describing their
+                        daily tasks in detail. It was difficult to interview for information because
+                        every word we said could affect the direction of the subject's speech. A misuse
+                        of phrase may mislead the interviewees, which can confuse them in the end
+                        and make them unwilling to provide information.</p>
+
+			            <p>We carefully conducted all of our interviews and returned to group meetings
+			            with extensive data. We analyzed the information and identified the tasks
+			            that are better off without technology and eliminated them. We then proceeded to
+			            examine the breakdowns within work flows, and discovered that there were
+			            several repeated steps in the subjects' current records management methods.
+			            We decided to work on solutions that address this issue. After a 3-hour
+			            brainstorming session, the white board in our study room was overwhelmed with
+			            ideas and features. We trimmed down the set and concluded with an redesigned workflow.</p>
+
+			            <p>The system incorporates uses of Anoto pen and a digital contents management
+			            system designed specifically for the advisors and their tasks. We demonstrated
+			            the workflow to our subjects and professor and received positive feedbacks with
+			            some criticism. We then reiterated through several other prototypes and eventually
+			            resolved majority of the concenrs that the subjects had.</p>
+
+			            <p>In this webpage, links to our write-ups were provided. Phase 1 includes data
+			            analysis from our interviews with the subjects and phase 2 includes proposed work
+			            redesigns and low fidelity prototypes. The Final Report was written
+			            in standard CHI format and concludes everything with our final design.</p>
+
+			            <p>A link to the GitHub repository that contains our final working prototype was
+			            also provided. You can also download the Java Archive (requires JRE 7 and above).
+			            For the purpose of this course, we also prepared a short video summarizing our
+			            project; it is available on YouTube, recorded and editted by Marina (Mengqi) Zhao.</p>
+                    </div>
+                </div>
+
+                <div id="section4" class="sections">
+                    <div class="sectionTitle">Java Undo/Redo Module</div>
+
+                    <div class="sectionSubtitle">
+                        Java &plus; NetBeans | February 2011 - March 2011
+                    </div>
+
+                    <div class="linksMenu">
+                        <a class="link" href="https://github.com/thling/History"
+                           target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="sectionContent">
+                        <div class="extraInfo">
+                            <div class="sectionSubtitle">Software Highlights</div>
+                            <hr style="width:100%"/>
+                            <p><b>Object or Function Based Undo/Redo</b><br/>
+                            The module supports whole-object undo/redo, as well
+                            as function sequence based undo/redo (instead of storing
+                            the object, the module executes a list of user specified
+                            functions upon redo or undo operation).</p>
+
+                            <p><b>hList</b><br/>
+                            A Java Swing component that displays a list of undoable and
+                            redoable tasks. It can be easily associated with any button
+                            or window components.</p>
+                        </div>
+                        <p>As I was doing a side project (a trading card game, now deprecated),
+                        I found that in most cases the "card maker" program that I created
+                        required several undo and redo actions. It is annoying that, whenever
+                        a mistake was made, I had to restart the entire card making process.</p>
+
+		                <p>I paused the trading card game project and began focusing on
+		                an undo and redo module. At first, I thought it could be simply a
+		                stack that simply returns the last object in the list, but I soon
+		                realized that there were more to it. I needed to take care of type
+		                conversion, redo sequences, and several other elements that, without
+		                them, the module would not be functional.
+
+		                <p>I spent more time into researching dynamic typing in Java and other
+		                list and abstact functions optimization. I also implemented a few algorithms
+		                that could increase object retrieval and memory management. Many things were
+		                done in order to make the module easily integrated into other systems, and
+		                I was thrilled when I finally finished the framework. In addition to
+		                core operations, I also provided a custom Java Swing object, <code>hList</code>,
+		                that displays a list of operations pushed to stack when triggered.</p>
+
+		                <p>Everything was good, until I found out that Java actually had its own built-in
+		                undo and redo library. I felt devastated when I realized that because I spent
+		                weeks working on this module. Although it was depressing, I still felt that
+		                the experience I obtained through the intense programming was invaluable.</p>
+                    </div>
+                </div>
+
+                <div id="tips" class="quicktips">
+                    Press More or Back buttons on the top,<br/>
+                    or Left or Right arrow keys to navigate.
+                    <br/><br/>
+                    <span style="font-size: 12px;">
+                            Click to dismiss</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<title>Sam's Home</title>
+<head>
+    <meta http-equiv="content-type" content="text-html; charset=utf-8">
+    <link type='text/css' rel='stylesheet' href='../styles/fonts.css' />
+    <link type='text/css' rel='stylesheet' href='../styles/page-loader.css' />
+    <link type='text/css' rel='stylesheet' href='../styles/main.css' />
+    <link type='text/css' rel='stylesheet' href='../plugins/switcher-layout/switcher.css' />
+    <script type='text/javascript' src='../scripts/jquery-1.8.3.min.js'></script>
+    <script type='text/javascript' src='../scripts/util.js'></script>
+    <script type='text/javascript' src='../scripts/page-loader.js'></script>
+    <script type='text/javascript' src='../scripts/page-entry.js'></script>
+    <!--script type='text/javascript' src='../plugins/switcher-layout/switcher.js'></script-->
+    <script type='text/javascript' src='../experiments/squarefloat.js'></script>
+    <script>
+        $(document).ready(function() {
+            pageEntry('../images/welcome_text.png', 'home');
+            goLive('body');
+        });
+    </script>
+</head>
+<body>
+    <div class="pageLoader">
+        - LOADING -
+    </div>
+    <div id="cover">
+        <img id="pageHeader"></img>
+        <div id="menuList">
+            <span><a id="menuHome" class="menuItem">home</a></span>
+            <span><a id="menuAbout" class="menuItem" href="../about">about</a></span>
+            
+            <hr align="right" />
+            
+            <span><a id="menuProjects" class="menuItem" href="../projects">projects</a></span>
+            <span><a id="menuJournals" class="menuItem" href="../journals">journals</a></span>
+        </div>
+        <div id="contents_cover">
+            <div id="contents">
+                <div id="section1" class="sections">
+                    <div class="sectionTitle">Hello :-)</div>
+                        <p>Welcome to Sam's website.</p>
+                        <p>You are viewing the home page where I showcase
+                        my web experiments (selected at random).</p>
+                        <p>Experiments count: 1.</p>
+                        
+                        <hr style="width: 100%;"/>
+                        
+                        <div class="sectionContent">
+                        <p><b>You are currently seeing</b><br/>
+                            <script>document.write(experimentName)</script></p>
+                        <p><b>About this experiment</b>
+                            <script>getDescription();</script>
+                        </p>
+                        <p><b>Notes on this experiment</b>
+                            <script>getNotes();</script>
+                        </p>
+                        
+                        <hr style="width: 100%;"/>
+                        
+                        <p>...and yes I know that this is a weird way to welcome
+                        you to my website but, well, I am a programmer, it is
+                        the most sincere way I could think of to greet you ;-)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

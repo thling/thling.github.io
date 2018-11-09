@@ -1,0 +1,79 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+.customnavbar {
+	list-style-type:none;
+	padding-top:20px;
+	padding-left:0px;
+	padding-bottom:8px;
+	margin-top:-38px;
+	margin-left:0px;
+	margin-right:0px;
+	font-size:13px;
+	font-family: 'Roboto';
+	background-color:#303030;
+	overflow: hidden;
+	height:30px;
+}
+
+.customlist {
+	color:#b0b0b0;
+	display:block;
+	font-family:'Roboto';
+	font-weight: 300;
+	text-decoration:none;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+ul.custom_navbar_contents {
+	list-style-type:none;
+	display:block;
+	font-size:15px;
+	background-color:rgba(0,0,0,0.6);
+	overflow:hidden;
+	height:30px;
+	margin-top:-30px;
+	margin-left:-30px;
+}
+
+li.custom_navbar_contents {
+	float:left;
+	height: 30px;
+	padding-top: 4px;
+}
+
+li.custom_navbar_contents:hover {
+	background-color: rgb(100,100,100);
+}
+
+a.custom_navbar_contents {
+	display:block;
+	width:auto;
+	font-family: 'Roboto';
+	font-weight: 300;
+	text-decoration:none;
+	padding-left:10px;
+	padding-right:10px;
+	color:#b0b0b0;
+}
+
+span.custom_navbar_contents { 
+	display:block;
+	width:auto;
+	font-family: 'Roboto';
+	font-weight: 400;
+	text-decoration:none;
+	padding-left:10px;
+	padding-right:10px;
+	cursor: default;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.80), rgba(255,255,255,0)); 
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.80), rgba(255,255,255,0));
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.80), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.80), rgba(255,255,255,0));
+}

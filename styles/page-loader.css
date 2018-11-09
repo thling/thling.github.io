@@ -1,0 +1,15 @@
+div.pageLoader {
+    display: none;
+    z-index:100;
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center; 
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color:#dcdcdc;
+}

@@ -1,0 +1,16 @@
+.extraInfo {
+    float: left;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    width: auto;
+}
+
+.sectionContent {
+    margin-top: 10px;
+}
+
+.itemTitle {
+    margin-top: 10px;
+}
